@@ -9,49 +9,49 @@ use App\Contracts\ProgramRepository;
 use App\Contracts\UserRepository;
 
 if (!function_exists('attendance')) {
-    function attendance(): \App\Contracts\AttendanceRepository
+    function attendance(): AttendanceRepository
     {
         return resolve(AttendanceRepository::class);
     }
 }
 
 if (!function_exists('category')) {
-    function category(): \App\Contracts\CategoryRepository
+    function category(): CategoryRepository
     {
         return resolve(CategoryRepository::class);
     }
 }
 
 if (!function_exists('gallery')) {
-    function gallery(): \App\Contracts\GalleryRepository
+    function gallery(): GalleryRepository
     {
         return resolve(GalleryRepository::class);
     }
 }
 
 if (!function_exists('media')) {
-    function media(): \App\Contracts\MediaRepository
+    function media(): MediaRepository
     {
         return resolve(MediaRepository::class);
     }
 }
 
 if (!function_exists('payment')) {
-    function payment(): \App\Contracts\PaymentRepository
+    function payment(): PaymentRepository
     {
         return resolve(PaymentRepository::class);
     }
 }
 
 if (!function_exists('program')) {
-    function program(): \App\Contracts\ProgramRepository
+    function program(): ProgramRepository
     {
         return resolve(ProgramRepository::class);
     }
 }
 
 if (!function_exists('user')) {
-    function user(): \App\Contracts\UserRepository
+    function user(): UserRepository
     {
         return resolve(UserRepository::class);
     }
