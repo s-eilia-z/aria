@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->foreignId('user_id')->constrained('users');
-            $table->foreignId('gallery_id')->constrained('gallery');
+            $table->foreignId('gallery_id')->constrained('galleries');
             $table->text('file');
             $table->timestamps();
             $table->softDeletes();
