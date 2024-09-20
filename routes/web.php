@@ -1,7 +1,8 @@
 <?php
 
-use App\Livewire\App\Dashboard;
 use App\Livewire\Auth\Login;
+use App\Livewire\App\Programs;
+use App\Livewire\App\Dashboard;
 use App\Livewire\Auth\Register;
 use Illuminate\Support\Facades\Route;
 
@@ -20,4 +21,5 @@ Route::get('/logout', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
+    Route::get('/programs', Programs::class)->name('programs');
 });
